@@ -11,7 +11,7 @@ services:
       - MEM_LIMIT=1024 # Optionally change the Java memory limit (in Megabytes). Set to default to reset to default (optional)
       - MEM_STARTUP=1024 # Optionally change the Java initial/minimum memory (in Megabytes). Set to default to reset to default (optional)
     volumes:
-      - /path/to/data:/config # All Unifi data stored here
+      - /data/unifi/config:/config # All Unifi data stored here
     ports:
       - 8443:8443 # Unifi web admin port
       - 3478:3478/udp # Unifi STUN port
